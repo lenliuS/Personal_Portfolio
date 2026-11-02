@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sallen Liu | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Sallen Liu — aspiring web developer">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Inter font directly to avoid dead link issues -->
+    <style id="font-fallback">
+        /* Inter font fallback */
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300 800;
+            font-display: swap;
+            src: local('Inter'), local('sans-serif');
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                <a href="#home" aria-label="Home">Sallen<span>.Portfolio</span></a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section — Creative & Dynamic -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="eyebrow"><img src ="graduation.png" alt="graduation" width="30" height="30">Student • <img src ="laptop.png" alt="laptop" width="30" height="30" >Aspiring Web Developer • 🇲🇾 UNIMAS
+                <img src ="hi.gif" alt="hi" width="50" height="50"></p>
+                <h1 id="hero-heading">Hello, I'm <span class="highlight">Sallen Liu</span>.</h1>
+                <h2>I build things for the web — <span id="typing-text" class="typing-text"></span></h2>
+                <p>
+                    I'm a third-year Computer Science student passionate about turning ideas into 
+                    <strong>beautiful, functional, and accessible</strong> digital experiences. 
+                    I blend code with creativity to build websites that work and wow.
+                </p>
+                
+                <div class="features-row">
+                    <span class="feature-balloon"><img src ="voltage.png" alt="voltage" width="20" height="20"> Clean Code</span>
+                    <span class="feature-balloon"><img src ="palette.png" alt="palette" width="20" height="20"> UI/UX Design</span>
+                    <span class="feature-balloon"><img src ="responsive.png" alt="responsive" width="20" height="20"> Responsive</span>
+                    <span class="feature-balloon"><img src ="wheelchair.png" alt="wheelchair" width="20" height="20"> Accessible</span>
+                    <span class="feature-balloon"><img src ="sparkles.png" alt="sparkles" width="20" height="20"> Animations</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-secondary">My Story</a>
+                    <a href="#projects" class="btn btn-primary">See My Projects↓</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+                <span></span>
+            </div>
+        </section>
+
+       <section id="about" class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <p class="eyebrow">01 / ABOUT ME</p>
+    <h2 id="about-heading" class="section-title">A little about who I am.</h2>
+
+    <!-- Main About Layout: Circular Image Left + Content Right -->
+    <div class="about-layout">
+      <!-- Circular Profile Image on Left -->
+      <div class="about-circle-side">
+        <img src="picture.jpg" alt="Sallen Liu Yee Ling" class="circle-profile">
+      </div>
+
+      <!-- Text Content on Right -->
+      <div class="about-content">
+        <div class="about-text">
+          <h3><img src="Hello.gif" alt="Hello" width="50" height="50"> Hello, nice to meet you!</h3>
+          <p>
+            My name is <span class="highlight-text">Sallen Liu Yee Ling</span>. I am currently a third-year
+            student pursuing a Bachelor Of Computer Science with
+            Honours in Multimedia Computing at
+            <strong>Universiti Malaysia Sarawak (UNIMAS)</strong>.
+          </p>
+          <p>
+            I chose Multimedia Computing because it sits right at the intersection of
+            <span class="highlight-text">logic and creativity</span>. I love seeing how lines of code
+            transform into interactive interfaces, colourful designs, and meaningful experiences
+            that people can actually use and enjoy.
+          </p>
+          <p>
+            Every project is a chance to learn something new whether it's mastering a tag,
+            perfecting a layout, or figuring out that one tricky JavaScript function.
+            I believe in writing code that is <span class="highlight-text">clean, kind, and accessible</span>
+            to everyone.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Cards -->
+    <div class="about-cards">
+      <div class="about-card">
+        <h3>What Drives Me</h3>
+        <p>The thrill of solving problems and turning "what if" into "here it is."</p>
+      </div>
+      <div class="about-card">
+        <h3>My Sweet Spot</h3>
+        <p>Where elegant code meets thoughtful design — function that feels beautiful.</p>
+      </div>
+      <div class="about-card">
+        <h3>Growing Every Day</h3>
+        <p>Currently watering my skills in HTML, CSS, JavaScript, and beyond.</p>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4 class="timeline-title"><img src="pushpin.png" alt="pushpin" width="40" height="40"> Bachelor of Computer Science</h4>
+        <p class="timeline-desc">Multimedia Computing • Year 3 • Building the foundation</p>
+      </div>
+      <div class="timeline-item">
+        <h4 class="timeline-title"><img src="laptop.png" alt="laptop" width="40" height="40"> Started Web Development</h4>
+        <p class="timeline-desc">Fell in love with how the web connects and empowers everyone</p>
+      </div>
+      <div class="timeline-item">
+        <h4 class="timeline-title"><img src="goal.png" alt="goal" width="40" height="40"> What's Next</h4>
+        <p class="timeline-desc">Internship • Real-world projects • Becoming the developer I want to be</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+       
+<!-- Skills Section — Anime Style -->
+<section id="skills" class="section" aria-labelledby="skills-heading">
+    <h2 id="skills-heading" class="section-title">My Skills</h2>
+    <div class="skills-grid">
+
+        <!-- Programming Skills -->
+        <div class="skill-card" >
+            
+            <h3>Programming Skills</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level: 70%">
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+            <div class="pop-info">
+                <strong>Core:</strong> Python, Java, JavaScript, HTML,CSS and C/C++<br>
+                <span class="pop-subplus"><img src="bulb.png" alt="bulb" width="30" height="30">Building & debugging daily!</span>
+            </div>
+        </div>
+
+        <!-- Design Skills -->
+        <div class="skill-card" >
+            
+            <h3>Design Skills</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level: 80%">
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+            <div class="pop-info">
+                <strong>Design:</strong> UI/UX design, Storyboarding and illustration<br>
+                <span class="pop-subplus"><img src="sparkles.png" alt="sparkles" width="30" height="30"> Creating clean and user‑friendly designs!</span>
+            </div>
+        </div>
+
+        <!-- Tools and Software -->
+        <div class="skill-card">
+            
+            <h3>Tools and Software</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level: 75%">
+                    <span class="skill-percent">75%</span>
+                </div>
+            </div>
+            <div class="pop-info">
+                <strong>Expertise:</strong> Figma, VS Code, Visual Studio, phpMyadmin ,OpenGL ,Photoshop and Premiere Pro<br>
+                <span class="pop-subplus"><img src="gear.png" alt="gear" width="30" height="30"> Always to learning workflows!</span>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card" >
+            
+            <h3>Soft Skills</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level: 70%">
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+            <div class="pop-info">
+                <strong>Strengths:</strong> Teamwork, Communication,and Adaptability<br>
+                <span class="pop-subplus"><img src="star.png" alt="star" width="30" height="30"> Always growing together!</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+       <!-- Projects Section — Creative Cards -->
+<section id="projects" class="section" aria-labelledby="projects-heading">
+    <p class="eyebrow">02 / MY Projects</p>
+    <h2 id="projects-heading" class="section-title">Projects I've Built</h2>
+    <p class="section-intro">Here are 5 projects that showcase what I can do .</p>
+    
+    <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card">
+            <div class="image-wrapper">
+                <img src="portfolio.JPG" alt="Personal portfolio" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h3>Personal Portfolio</h3>
+                <p>Responsive portfolio site built with semantic HTML, modern CSS and JavaScript ,the page you're viewing right now!</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JS</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+            <div class="image-wrapper">
+                <img src="Oosd.JPG" alt="Smart Student Team Platform" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h3>Smart Student Team Platform</h3>
+                <p>Role-based console app using OOP principles that allows to manage tasks, teams, and meetings for students, leaders, and lecturers.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">JS</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+            <div class="image-wrapper">
+                <img src="Java.JPG" alt="SDG 3 Wellness Engine" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h3>SDG 3 Wellness Engine</h3>
+                <p>Java based desktop application featuring quizzes, flashcards, and learning modules. Gamifies health education with timers and leaderboards.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Java</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+            <div class="image-wrapper">
+                <img src="UIUX project.JPG" alt="Kuching ART Mobile App" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h3>Kuching ART Mobile App</h3>
+                <p>UI/UX usability testing and prototype evaluation for the upcoming Autonomous Rapid Transit system, featuring SUS metrics and accessibility insights.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Figma</span>
+                </div>
+            </div>
+        </article>
+
+<article class="project-card">
+            <div class="image-wrapper">
+                <img src="tetris.JPG" alt="tetris" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h3>2D tetris game</h3>
+                <p>A 2D tetris variant with an environmental theme, blending classic Tetris gameplay with an eco-friendly twist</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">OpenGL</span>
+                    <span class="tech-tag">C++</span>
+
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+    </div>
+</sectio>
+
+
+        <!-- Contact Section — Inviting & Interactive -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <p class="eyebrow">03 / GET IN TOUCH</p>
+            <h2 id="contact-heading" class="section-title">Let's Create Something Together<img src ="sparkles.png" alt="sparkles" width="50" height="50"> </h2>
+            <p class="section-intro">Have a project idea, feedback, or just want to say hi? I'd love to hear from you!</p>
+            
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" placeholder="What should I call you?">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="Where can I reach you?">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your idea..."></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message <img src="rocket.png" alt="rocket" width="20" height="20"> </button>
+                <p id="form-success" class="success-msg" hidden>✅ Message sent successfully! I'll get back to you soon.</p>
+            </form>
+            
+            <div class="contact-divider">
+                <span>Or connect directly</span>
+            </div>
+            
+            <div class="contact-links">
+                <a href="https://outlook.cloud.microsoft/mail/?realm=siswa.unimas.my&login_hint=100925@siswa.unimas.my" class="contact-link">
+                    <span class="contact-icon"><img src="email.png" alt="email" width="30" height="30"></span>100925@siswa.unimas.com
+                </a>
+
+                <div class="contact-links">
+                <a href="https://www.linkedin.com/in/sallen-liu-671ba02a2/" class="contact-link">
+                    <span class="contact-icon"><img src="linkedin.png" alt="linkedin" width="30" height="30"></span>linkedin
+                </a>
+                <div class="contact-item"></div>
+                <img src="telephone.png" alt="Phone" class="contact-icon" width="30" height="30">
+                <span class="contact-text">+601125053255</span>
+                 
+
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; <span id="year"></span> Sallen Liu . All rights reserved.</p>
+        <button id="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
